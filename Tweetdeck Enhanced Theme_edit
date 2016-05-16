@@ -1,0 +1,73 @@
+@-moz-document domain("tweetdeck.twitter.com") {
+/* Make popup image window transparent. */
+.med-fullpanel { background-color: transparent; }
+/*.med-origlink, .med-flaglink, .med-tweet { display: none; }*/
+.med-embeditem { top: 0px; bottom: 40px; }
+.mdl.s-full { max-width: 100%; }
+/*.mdl-dismiss { right: 49%; top: 10px; }*/
+.mdl { box-shadow: none; }
+.js-med-tweet,.med-tweetjs-med-tweet,.med-tweet
+	.tweet-header{
+		background-color: rgba()0,0,0,0.3!important;
+	}
+
+/* Adjust the height for article with media. */
+.stream-item { max-height: 100%; }
+
+/* Increase media height. */
+.is-narrow-columns .media-size-medium, 
+.is-wide-columns .media-size-medium, 
+.media-size-medium { height: 300px; }
+
+/* Change the cursor of column header to pointer. */
+.column-header, .column-header-temp { cursor: pointer; }
+
+/* Hide column scroll bar */
+.column-scroller { overflow: hidden; }
+@-moz-document url-prefix() { 
+	.column-scroller { overflow: auto; }
+}
+
+/* Decrease column margin */
+.is-narrow-columns .app-columns,
+.is-wide-columns .app-columns,
+.app-columns { padding: 0 0 0 2px; }
+.is-narrow-columns .column,
+.is-wide-columns .column,
+.column { margin-right: 2px; }
+.needs-scroll-bottom-offset.scroll-styled-h { bottom: 0px; }
+	
+	
+	.js-tweet-text ,.tweet-text with-linebreaks {
+/*color: red!important;
+*/		position: relative;
+		left: -20px;
+
+		
+		top: 10px;
+		padding-bottom: 10px;
+/*		width: 200px;*/
+
+	}
+	.stream-item js-stream-item,.is-draggable,.is-actionable{
+		padding-top: 10px;
+	}
+	.txt-small,.pin-right no-wrap{
+		top: 13px;
+		right: 10px;
+	}
+	/*
+	.url-ext{
+		display: none;
+	}
+	*/
+	.icon-more{
+/*	background-color: red!important;*/
+	position: relative;
+	left: 65px;
+
+		
+	
+	}
+	
+}
