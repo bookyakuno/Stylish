@@ -1,0 +1,210 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tweetdeck.twitter.com") {
+/*******************************************************
+TWEETS
+*******************************************************/
+
+.txt-size-variable--18,
+.txt-large {
+    font-size: 12px !important;
+}
+.js-tweet.tweet-detail {
+    padding: 3px;
+}
+.column {
+    margin: .5px!important;
+    font-size: 12px!important;
+    width: 199.8px !important;
+}
+html,
+.tweet-body {
+    line-height: 15px!important;
+}
+.item-box {
+    padding: 1px 1px !important;
+}
+.tweet {
+    padding-left: 3px;
+}
+.btd-dark-theme.btd-minimal_mode .column .stream-item {
+    border-top: 1px solid #444444;
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #444444;
+}
+.tweet-context,
+.tweet-img {
+    margin-left: -16px;
+}
+b.fullname.link-complex-target {
+    display: block;
+}
+/*******************************************************
+RETWEET, FAVORITE, FOLLOW BACKGROUND ON NOTIFICATION COLUMN
+*******************************************************/
+/*
+[data-key^="favorite"] {
+    border: #BE1931 5px solid!important;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+[data-key^="retweet"],
+.quoted-tweet {
+    border: #19CF86 5px solid!important;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+[data-key^="follow"] {
+    border: #00ACED 5px solid!important;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+    */
+/*******************************************************
+REMOVE SCROLLBARS
+*******************************************************/
+
+.js-column-scroller {
+    width: 105.3% !important;
+}
+/*******************************************************
+COLUMN HEADER
+*******************************************************/
+
+div.column-content {
+    top: 30px!important;
+}
+.column-header,
+.column-header-temp {
+    height: 30px!important;
+    line-height: 29px!important;
+}
+.sprite-drag-vertical {
+    height: 14px!important;
+}
+.column-type-icon {
+    display: none;
+}
+.column-title {
+    padding: 0 0 0 7px!important;
+    font-size: 17px!important;
+}
+.column-title .attribution {
+    display: none !important;
+}
+.txt-ellipsis {
+    text-overflow: clip !important;
+}
+.is-narrow-columns .media-size-large {
+    height: 270px;
+    margin: 0 20px 20px;
+    width: 175px;
+}
+.media-grid-4,
+.media-grid-3,
+.media-grid-2 {
+    height: 100px;
+    margin:0;
+    width: 100%;
+}
+.media-size-large,
+.media-size-large-height {
+    height: 120px;
+}
+.media-image {
+    background: #444448; 
+	background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+/*******************************************************
+SIDEBAR
+*******************************************************/
+
+.is-open {
+    transform: translateX(200px) !important;
+    margin-right: 200px !important;
+    transition-duration: 200ms !important;
+}
+.drawer {
+    width: 200px;
+    left: -200px;
+}
+.is-open .drawer:after {
+    left: 200px;
+}
+.nbfc.compose-account-names.link-clean b {
+    display: none!important;
+}
+.nbfc.compose-account-names.link-clean p {
+    margin-top: 7px;
+    line-height: 20px;
+}
+.is-list .compose-account {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #5E727E;
+}
+.txt-size--13,
+.txt-base-small {
+    font-size: 14px !important;
+}
+/*******************************************************
+ACCOUNT SELECTION
+*******************************************************/
+
+.compose-account {
+    position: relative;
+    float: left;
+    background-color: #5E727E;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px;
+    margin: 5px;
+}
+.compose-account .avatar.size48 {
+    width: 38px;
+    height: 38px;
+}
+.compose-account .avatar.size32 {
+    width: 16px;
+    height: 16px;
+}
+.obj-left .avatar.size32 {
+    width: 32px;
+    height: 32px;
+}
+.is-grid .compose-account:nth-child(4n+4),
+.is-minigrid .compose-account:nth-child(6n+6) {
+    margin-right: 5px;
+}
+.is-minigrid .compose-account {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+/*******************************************************
+DROPDOWN MENU
+*******************************************************/
+
+.pos-l {
+    width: 203px;
+}
+.dropdown-menu {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: arial;
+}
+/*******************************************************
+BOTTOM SCROLLBAR
+*******************************************************/
+
+.needs-scroll-bottom-offset.scroll-styled-h {
+    bottom: 0;
+}
+}
